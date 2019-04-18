@@ -29,6 +29,7 @@ app.db.connect(function (err) {
   console.log('connected to db as id ' + app.db.threadId);
 });
 
+
 const expressVueMiddleware = expressVue.init(app.config.vueOptions);
 server.use(expressVueMiddleware);
 

@@ -2,7 +2,6 @@
 *** SIMPLE GRID
 *** (C) ZACH COLE 2016
 **/
-
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 /* UNIVERSAL */
@@ -182,13 +181,15 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
+@media only screen and (min-width: 33.75em) {
+  /* 540px */
   .container {
     width: 80%;
   }
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
+@media only screen and (min-width: 45em) {
+  /* 720px */
   .col-1 {
     width: 4.33%;
   }
@@ -242,12 +243,14 @@ p {
   }
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
+@media only screen and (min-width: 60em) {
+  /* 960px */
   .container {
     width: 75%;
     max-width: 60rem;
   }
 }
+
 body {
   background: white;
   color: black;
@@ -255,6 +258,28 @@ body {
   margin: auto;
 }
 
-#app{
-  max-width:  1300px;
+#app {
+  max-width: 1300px;
+}
+
+.colors-wrap {padding-right: 30px;display: flex;}
+
+.colors-wrap div {
+  display: inline-block;
+  margin-right: -14px;
+  height: 26px;
+  width: 26px;
+  border-radius: 100%;
+  border: 1px solid #999;
+}
+
+.item-img{
+  width: 100%;
+  margin: auto;
+}
+
+.item-footer{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
 }
